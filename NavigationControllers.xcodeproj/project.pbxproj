@@ -14,6 +14,8 @@
 		3FFF2D241FCF8B4700D985B9 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2D231FCF8B4700D985B9 /* FavouritesList.swift */; };
 		3FFF2D281FCF91C000D985B9 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2D271FCF91C000D985B9 /* RootTableViewController.swift */; };
 		3FFF2D2A1FCFA26300D985B9 /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2D291FCFA26300D985B9 /* FontListViewController.swift */; };
+		3FFF2D2C1FCFA94F00D985B9 /* FontSizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2D2B1FCFA94F00D985B9 /* FontSizesViewController.swift */; };
+		3FFF2D2E1FCFAD6400D985B9 /* FontInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2D2D1FCFAD6400D985B9 /* FontInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3FFF2D231FCF8B4700D985B9 /* FavouritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 		3FFF2D271FCF91C000D985B9 /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
 		3FFF2D291FCFA26300D985B9 /* FontListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
+		3FFF2D2B1FCFA94F00D985B9 /* FontSizesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizesViewController.swift; sourceTree = "<group>"; };
+		3FFF2D2D1FCFAD6400D985B9 /* FontInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				3FFF2D231FCF8B4700D985B9 /* FavouritesList.swift */,
 				3FFF2D271FCF91C000D985B9 /* RootTableViewController.swift */,
 				3FFF2D291FCFA26300D985B9 /* FontListViewController.swift */,
+				3FFF2D2B1FCFA94F00D985B9 /* FontSizesViewController.swift */,
+				3FFF2D2D1FCFAD6400D985B9 /* FontInfoViewController.swift */,
 			);
 			path = NavigationControllers;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFF2D2C1FCFA94F00D985B9 /* FontSizesViewController.swift in Sources */,
 				3FFF2D241FCF8B4700D985B9 /* FavouritesList.swift in Sources */,
 				3FFF2D2A1FCFA26300D985B9 /* FontListViewController.swift in Sources */,
+				3FFF2D2E1FCFAD6400D985B9 /* FontInfoViewController.swift in Sources */,
 				3FFF2D281FCF91C000D985B9 /* RootTableViewController.swift in Sources */,
 				3FFF2D121FCF861A00D985B9 /* AppDelegate.swift in Sources */,
 			);
