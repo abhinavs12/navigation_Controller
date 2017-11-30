@@ -8,7 +8,7 @@ class RootTableViewController: UITableViewController {
     private var familyNames : [String]!
     private var cellPointSize : CGFloat!
     private var favouritesList : FavouritesList!
-    private static let familyCell = "Family Name"
+    private static let familyCell = "FamilyName"
     private static let favouritesCell = "Favourites"
     
     //this application event trigeers every time the view is going to be rendered
@@ -83,6 +83,49 @@ class RootTableViewController: UITableViewController {
             return tableView.dequeueReusableCell(withIdentifier: RootTableViewController.favouritesCell, for: indexPath)
         }
     }
+    
+    
+    //Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexpath = tableView.indexPath(for: sender as! UITableViewCell)!
+        
+        let listVC = segue.destination as! FontListViewController
+        
+        if indexpath.section == 0{
+            let familyName = familyNames[indexpath.row]
+            listVC.fontNames = (UIFont.fontNames(forFamilyName: familyName) as [String]).sorted()
+            
+            listVC.navigationItem.title = familyName
+            listVC.showsFavourites = false
+
+        } else {
+            listVC.fontNames = favouritesList.favourites
+            listVC.navigationItem.title = "Favourites"
+            listVC.showsFavourites = true
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
    
 }
